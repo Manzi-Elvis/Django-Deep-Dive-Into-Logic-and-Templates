@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Django Deep Dive{% endblock %}</title>
+</head>
+<body>
+
+<header>
+    <h2>Django Logic & Templates Demo</h2>
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+    </nav>
+</header>
+
+<hr>
+
+{% block content %}
+{% endblock %}
+
+<footer>
+    <hr>
+    <p>© 2026 Django Deep Dive</p>
+</footer>
+
+</body>
+</html>
