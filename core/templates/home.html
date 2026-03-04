@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Deep Dive Into Logic & Templates</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
 
 <h1>Welcome {{ name }}</h1>
 
@@ -21,5 +20,4 @@
     {% endfor %}
 </ul>
 
-</body>
-</html>
+{% endblock %}
