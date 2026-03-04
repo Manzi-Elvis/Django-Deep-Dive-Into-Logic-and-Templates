@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deep Dive Into Logic & Templates</title>
+</head>
+<body>
+
+<h1>Welcome {{ name }}</h1>
+
+{% if age >= 18 %}
+<p>You are an adult.</p>
+{% else %}
+<p>You are underage.</p>
+{% endif %}
+
+<h3>Messages:</h3>
+
+<ul>
+    {% for message in messages %}
+        <li>{{ message|upper }}</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
